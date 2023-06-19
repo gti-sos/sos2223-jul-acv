@@ -36,11 +36,10 @@ jobs:
       
 #      - name: Run Backend tests
 #        run : npm test
-
-      - id: 'auth'
-        uses: 'google-github-actions/auth@v1'
-        with:
-          credentials_json: '${{ secrets.GCP_SA_KEY_JSON }}'
+#      - id: 'auth'
+#        uses: 'google-github-actions/auth@v1'
+#        with:
+#          credentials_json: '${{ secrets.GCP_SA_KEY_JSON }}'
  
       - name: 'Set up Cloud SDK'
         uses: 'google-github-actions/setup-gcloud@v1'
