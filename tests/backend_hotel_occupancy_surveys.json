@@ -1,0 +1,740 @@
+{
+	"info": {
+		"_postman_id": "8dca2fcd-7660-4f4d-b6cb-ca7baca71738",
+		"name": "Ana-v2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25974748"
+	},
+	"item": [
+		{
+			"name": "/hotel-occupancy-surveys/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/loadInitialData",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?province=Sevilla",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Hotel ocupancy surveys greather than 0\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/?province=Sevilla",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						""
+					],
+					"query": [
+						{
+							"key": "province",
+							"value": "Sevilla"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?province=Sevilla&limit=1&offset=1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/?province=Sevilla&limit=1&offset=1",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						""
+					],
+					"query": [
+						{
+							"key": "province",
+							"value": "Sevilla"
+						},
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?province=Sevilla&year=2022",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/?province=Sevilla&year=2022",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						""
+					],
+					"query": [
+						{
+							"key": "province",
+							"value": "Sevilla"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?from=2021&to=2022",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Hotel ocupancy surveys greather than 0\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/?from=2021&to=2022",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						""
+					],
+					"query": [
+						{
+							"key": "from",
+							"value": "2021"
+						},
+						{
+							"key": "to",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR404/hotel-occupancy-surveys/Andalucía",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Madrid",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Madrid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR405/hotel-occupancy-surveys/Sevilla",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"year\": 2022,\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Sevilla",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Sevilla"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR400/hotel-occupancy-surveys/Sevilla",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys/Andalucía",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"year\": 2022,\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Hotel ocupancy surveys greather than 0\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(0);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR409/hotel-occupancy-surveys/Andalucía",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 409\", function () {\r",
+							"    pm.response.to.have.status(409);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"year\": 2022,\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "?limit=3&offset=5",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Hotel ocupancy surveys greather than 0\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(0);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"The search has 'limit' and 'offset'.\", function(){\r",
+							"    pm.request.url.query.has(\"limit\"&&\"offset\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/?limit=3&offset=5",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						""
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "3"
+						},
+						{
+							"key": "offset",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR405/hotel-occupancy-surveys",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"year\": 2021,\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Madrid",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Madrid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR400/hotel-occupancy-surveys/Andalucía/2022",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Andalucía/2025",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Andalucía",
+						"2025"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys/Andalucía/2022",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"province\": \"Andalucía\",\r\n    \"year\": 2021,\r\n    \"average_employment\": 34.976,\r\n    \"estimated_average_open_establishment\": 2.343,\r\n    \"estimated_average_place\": 248.005,\r\n    \"estimated_room\": 113.710,\r\n    \"occupancy_rate_by_place\": 54,\r\n    \"occupancy_rate_by_weekend_place\": 62,\r\n    \"room_occupancy_rate\": 62\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Andalucía/2022",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Andalucía",
+						"2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ERROR404/hotel-occupancy-surveys/Andalucía/2023",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {\r",
+							"    pm.response.to.have.status(404);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Andalucía/2022",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Andalucía",
+						"2022"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys/Andalucía/2021",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/Andalucía/2021",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"Andalucía",
+						"2021"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

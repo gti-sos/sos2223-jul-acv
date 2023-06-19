@@ -1,11 +1,11 @@
 ------------------
-## SOS2223-14
+## SOS2223-jul-acv
 ------------------
 - **Team**
   - [Ana Chávez Velasco](https://github.com/anachavel1)
 - **Project description**: My project consists of analyzing the hotel occupancy in Andalusia.
 - **Repository**: [gti-sos/SOS2223-jul-acv](https://github.com/gti-sos/SOS2223-jul-acv)
-- **URL**: https://sos2223-14.appspot.com
+- **URL**: https://SOS2223-jul-acv.appspot.com
 - **APIs**:
-  - https://sos2223-14.appspot.com/api/v1/hotel-occupancy-surveys/docs
-  - https://sos2223-14.appspot.com/api/v2/hotel-occupancy-surveys/docs (developed by Ana Chávez Velasco)
+  - https://SOS2223-jul-acv.appspot.com/api/v1/hotel-occupancy-surveys/docs
+  - https://SOS2223-jul-acv.appspot.com/api/v2/hotel-occupancy-surveys/docs (developed by Ana Chávez Velasco)
