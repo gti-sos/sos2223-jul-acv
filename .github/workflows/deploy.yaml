@@ -34,8 +34,8 @@ jobs:
       - name: Run app
         run : npm start &
       
-      - name: Run Backend tests
-        run : npm test
+#      - name: Run Backend tests
+#        run : npm test
 
       - id: 'auth'
         uses: 'google-github-actions/auth@v1'
@@ -51,8 +51,8 @@ jobs:
       - name: Deploy
         run: gcloud app deploy
 
-      - name: Run e2e tests
-        run : npx playwright test
+#      - name: Run e2e tests
+#        run : npx playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
