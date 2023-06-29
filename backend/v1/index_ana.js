@@ -1,6 +1,7 @@
 import Datastore from 'nedb';
 var db = new Datastore();
 const BASE_API_URL = "/api/v1";
+console.log("prueba");
 
 function loadBackend_ana(app) {    
 
