@@ -11,7 +11,7 @@
     "sweetalert2": "^11.4.8",
     "xlsx": "^0.18.5"
   },
-  "name": "sos2223-jul-acv",
+  "name": "SOS2223-jul-acv1",
   "description": "hello",
   "version": "0.0.0",
   "main": "index.js",
@@ -23,14 +23,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gti-sos/SOS2223-jul-acv.git"
+    "url": "git+https://github.com/gti-sos/SOS2223-jul-acv1.git"
   },
   "author": "anachavel1",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gti-sos/SOS2223-jul-acv/issues"
+    "url": "https://github.com/gti-sos/SOS2223-jul-acv1/issues"
   },
-  "homepage": "https://github.com/gti-sos/SOS2223-jul-acv#readme",
+  "homepage": "https://github.com/gti-sos/SOS2223-jul-acv1#readme",
   "directories": {
     "test": "tests"
   },

@@ -2,7 +2,7 @@
     //@ts-nocheck
     import { onMount } from "svelte";
 
-    let API = "https://SOS2223-jul-acv.appspot.com/api/v2";
+    let API = "https://SOS2223-jul-acv1.appspot.com/api/v2";
     let p = "";
     let datos = "";
     let provincias = [];
@@ -145,7 +145,7 @@
         <h2 style="text-align: center; margin-top:100px; font-style:oblique; font-family:initial">
             Gráfica ocupación de hoteles en Andalucía
         </h2>
-        <p style="text-align:center">Fuente: <a style="text-decoration: none; color:black" href="https://SOS2223-jul-acv.appspot.com/api/v2/hotel-occupancy-surveys" target="_blank"><u>API Ocupación de hoteles</u></a></p>
+        <p style="text-align:center">Fuente: <a style="text-decoration: none; color:black" href="https://SOS2223-jul-acv1.appspot.com/api/v2/hotel-occupancy-surveys" target="_blank"><u>API Ocupación de hoteles</u></a></p>
         <p style="text-align:center">Gráfica con: <a style="text-decoration: none; color:black" href="https://jscharting.com/" target="_blank"><u>JSCharting</u></a></p>
         <div id="chartDiv" style="width:1500px; height:500px; margin: 0px auto;"/>
     </div>

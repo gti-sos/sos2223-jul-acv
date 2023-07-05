@@ -27,7 +27,7 @@
     let API = "/api/v2/hotel-occupancy-surveys";
 
     if (dev) {
-        API = "https://SOS2223-jul-acv.appspot.com" + API;
+        API = "https://SOS2223-jul-acv1.appspot.com" + API;
     }
 
     let dato = [];
@@ -116,7 +116,7 @@
     }
 
     async function comeBack() {
-        window.location.href = "https://SOS2223-jul-acv.appspot.com/hotel-occupancy-surveys";
+        window.location.href = "https://SOS2223-jul-acv1.appspot.com/hotel-occupancy-surveys";
     }
 </script>
 

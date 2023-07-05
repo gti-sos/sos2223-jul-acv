@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "URLBASE",
-			"value": "http://SOS2223-jul-acv.appspot.com/api/v2",
+			"value": "http://SOS2223-jul-acv1.appspot.com/api/v2",
 			"type": "default",
 			"enabled": true
 		}

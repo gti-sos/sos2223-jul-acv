@@ -17,7 +17,7 @@
     let API = "/api/v2/hotel-occupancy-surveys/data";
 
     if (dev) {
-        API = "https://SOS2223-jul-acv.appspot.com" + API;
+        API = "https://SOS2223-jul-acv1.appspot.com" + API;
     }
 
     let data = [];

@@ -23,7 +23,7 @@
     let API = "/api/v2/hotel-occupancy-surveys";
 
     if (dev) {
-        API = "https://SOS2223-jul-acv.appspot.com" + API;
+        API = "https://SOS2223-jul-acv1.appspot.com" + API;
     }
 
     let datos = [];
@@ -604,7 +604,7 @@ async function getFromTo(searchProvinceRange,getFrom,getTo) {
     } 
 
     async function view(province, year) {
-        window.location.href = "https://SOS2223-jul-acv.appspot.com/hotel-occupancy-surveys/"+province+"/"+year;
+        window.location.href = "https://SOS2223-jul-acv1.appspot.com/hotel-occupancy-surveys/"+province+"/"+year;
     }
 </script>
 
