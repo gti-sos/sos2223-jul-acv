@@ -21,11 +21,11 @@
     <br>
     <h2>Documentación PostMan</h2>
     <ul>
-        <a href="https://SOS2223-jul-acv1.appspot.com/api/v1/hotel-occupancy-surveys/docs">
+        <a href="https://documenter.getpostman.com/view/25974748/2s93RNzvcT">
             https://SOS2223-jul-acv1.appspot.com/api/v1/hotel-occupancy-surveys/docs
         </a>
         <br/>
-        <a href="https://SOS2223-jul-acv1.appspot.com/api/v2/hotel-occupancy-surveys/docs">
+        <a href="https://documenter.getpostman.com/view/25974748/2s93Xwzj4Q">
             https://SOS2223-jul-acv1.appspot.com/api/v2/hotel-occupancy-surveys/docs
         </a>
         (desarrollado por Ana Chávez Velasco)

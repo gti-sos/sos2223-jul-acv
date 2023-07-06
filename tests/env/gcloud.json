@@ -1,15 +1,14 @@
 {
-	"id": "4acf024b-adea-4398-91e7-b5a4dff13c08",
-	"name": "Gcloud",
+	"id": "1b94f75a-a467-4ac1-88ce-1a2243966bd9",
+	"name": "Google Cloud",
 	"values": [
 		{
 			"key": "URLBASE",
-			"value": "http://SOS2223-jul-acv1.appspot.com/api/v2",
-			"type": "default",
+			"value": "http://sos2223-jul-acv1.appspot.com",
 			"enabled": true
 		}
 	],
 	"_postman_variable_scope": "environment",
-	"_postman_exported_at": "2023-03-27T16:01:22.158Z",
-	"_postman_exported_using": "Postman/10.12.8-230325-0944"
+	"_postman_exported_at": "2023-07-06T12:39:28.574Z",
+	"_postman_exported_using": "Postman/10.15.10-230705-1255"
 }

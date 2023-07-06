@@ -3,42 +3,10 @@
 		"_postman_id": "8dca2fcd-7660-4f4d-b6cb-ca7baca71738",
 		"name": "Ana-v2",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "25974748"
+		"_exporter_id": "25974748",
+		"_collection_link": "https://winter-astronaut-614009.postman.co/workspace/SOS2223-jul-acv1~60b96d3b-5cde-430b-8631-4d27b70c0d1e/collection/25974748-8dca2fcd-7660-4f4d-b6cb-ca7baca71738?action=share&creator=25974748&source=collection_link"
 	},
 	"item": [
-		{
-			"name": "/hotel-occupancy-surveys/",
-			"event": [
-				{
-					"listen": "test",
-					"script": {
-						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
-							"});"
-						],
-						"type": "text/javascript"
-					}
-				}
-			],
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/loadInitialData",
-					"host": [
-						"{{URLBASE}}"
-					],
-					"path": [
-						"api",
-						"v2",
-						"hotel-occupancy-surveys",
-						"loadInitialData"
-					]
-				}
-			},
-			"response": []
-		},
 		{
 			"name": "/hotel-occupancy-surveys",
 			"event": [
@@ -731,6 +699,71 @@
 						"hotel-occupancy-surveys",
 						"Andalucía",
 						"2021"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/hotel-occupancy-surveys/",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URLBASE}}/api/v2/hotel-occupancy-surveys/loadInitialData",
+					"host": [
+						"{{URLBASE}}"
+					],
+					"path": [
+						"api",
+						"v2",
+						"hotel-occupancy-surveys",
+						"loadInitialData"
 					]
 				}
 			},
