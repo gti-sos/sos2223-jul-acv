@@ -13,7 +13,7 @@ jobs:
     timeout-minutes: 20
     name: Deploy to Google Cloud Run
     runs-on: ubuntu-latest
-    environment: production
+    environment: productionacv #Para mi proyecto le he añadido "acv"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
@@ -34,8 +34,9 @@ jobs:
       - name: Run app
         run : npm start &
       
-#      - name: Run Backend tests
-#        run : npm test
+      - name: Run Backend tests
+        run : npm test
+
       - id: 'auth'
         uses: 'google-github-actions/auth@v1'
         with:
@@ -50,8 +51,8 @@ jobs:
       - name: Deploy
         run: gcloud app deploy
 
-#      - name: Run e2e tests
-#        run : npx playwright test
+      - name: Run e2e tests
+        run : npx playwright test
 
       - uses: actions/upload-artifact@v3
         if: always()
