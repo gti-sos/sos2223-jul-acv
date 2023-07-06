@@ -14,7 +14,6 @@ app.use(express.json());
 app.use(express.static("./public"));
 
 // Proxy Ana
-
 var paths_ana = "/employ";
 var apiServerHost_ana = "https://sos2223-13.appspot.com/api/v1/employment-stats";
 
