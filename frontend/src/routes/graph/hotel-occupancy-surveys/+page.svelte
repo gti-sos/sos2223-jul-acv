@@ -201,14 +201,4 @@
     </figure>
 
     <div id="chartContainer" style="height: 250px;"></div>
-
-    {#if resultStatus != ""}
-        <p>
-            Result: 
-        </p>
-        <pre>
-            {resultStatus}
-            {result}
-        </pre>
-    {/if}
 </main>

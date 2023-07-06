@@ -1,4 +1,4 @@
-import express from "express";console.log("a");
+import express from "express";
 import request from "request";
 import cors from "cors";
 
@@ -29,7 +29,7 @@ app.get("/", (request,response) => {
 loadBackend_ana(app);
 
 app.use(handler);
-console.log("c");
+
 app.listen(port,()=>{
-    console.log(`Server ready in port ${port}`);console.log("d");
-});console.log("e");
+    console.log(`Server ready in port ${port}`);
+});

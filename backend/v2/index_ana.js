@@ -1,4 +1,4 @@
-import Datastore from 'nedb';console.log("f");
+import Datastore from 'nedb';
 var db = new Datastore();
 //const BASE_API_URL_V1 = "/api/v1";
 const BASE_API_URL = "/api/v2";
@@ -236,9 +236,8 @@ app.get(BASE_API_URL+"/hotel-occupancy-surveys/data", (request, response)=>{
     })
 });
 
-console.log("g");
 app.post(BASE_API_URL+"/hotel-occupancy-surveys", (request,response) => {
-    var newFile = request.body; console.log("h");
+    var newFile = request.body;
     console.log("new request new POST request /hotel-occupancy-surveys");
     if(!newFile.province || !newFile.year || !newFile.average_employment || !newFile.estimated_average_open_establishment || !newFile.estimated_average_place || !newFile.estimated_room || !newFile.occupancy_rate_by_place || !newFile.occupancy_rate_by_weekend_place || !newFile.room_occupancy_rate){
         console.log(`No se han recibido los campos esperados:`);
@@ -251,27 +250,27 @@ app.post(BASE_API_URL+"/hotel-occupancy-surveys", (request,response) => {
             }
             else{
                 if(data.length!=0){
-                    response.status(409).send("This resource already exists"); console.log("i");
+                    response.status(409).send("This resource already exists");
                 }
                 else{
                     db.insert(newFile, function(err, data){
                         if(err){
-                            console.log(`Error posting /hotel-occupancy-surveys: ${err}`); console.log("j");
+                            console.log(`Error posting /hotel-occupancy-surveys: ${err}`);
                             response.sendStatus(500);//j
                         }
                         else{
                             console.log(`newFile = ${JSON.stringify(newFile,null,2)}`);
                             console.log("New POST to /hotel-occupancy-surveys");
-                            response.status(201).send("Created"); console.log("f");
+                            response.status(201).send("Created");
                         }
                     });
                 }
-            }console.log("l");
-        });console.log("m");
-        console.log("n");
-    }        console.log("o");
-});console.log("p");
-console.log("q");
+            }
+        });
+        
+    }        
+});
+
 
 //GET
 app.get(BASE_API_URL+"/hotel-occupancy-surveys", (request,response) => {
@@ -858,7 +857,7 @@ app.delete(BASE_API_URL +"/hotel-occupancy-surveys",(request, response)=>{
         }
     });
 });
-};console.log("r");
+};
 
 function paginacion(req, lista){
     var res = [];
@@ -873,6 +872,5 @@ function paginacion(req, lista){
     return res;
 };
 
-console.log("s");
+
 export {loadBackend_ana};
-//serv:1-a,19-b,58-c,60-d,62-e 

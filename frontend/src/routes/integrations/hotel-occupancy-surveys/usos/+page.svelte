@@ -10,10 +10,10 @@
         </div>
         <div class="photo-block" style="margin-left: 20px;">
             <div class="photo-image-block">
-                <a href="http://sos2223-jul-acv1.ew.r.appspot.com/integrations/hotel-occupancy-surveys/usos/DrinksDigital"><img src="https://img.icons8.com/?size=512&id=105212&format=png" alt="Imagen" style="margin-bottom:-5px;"></a>
+                <a href="http://sos2223-jul-acv1.ew.r.appspot.com/integrations/hotel-occupancy-surveys/usos/FilmChase"><img src="https://img.icons8.com/?size=512&id=105212&format=png" alt="Imagen" style="margin-bottom:-5px;"></a>
             </div>
             <div class="photo-metadata-block">
-                <h2 class="photo-title">Bebidas</h2>
+                <h2 class="photo-title">Películas</h2>
             </div>
         </div>
    </div> 
