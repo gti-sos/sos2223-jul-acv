@@ -1,9 +1,9 @@
 //@ts-check
-const { test, expect } = require('@playwright/test');
+import { test, expect } from '@playwright/test';
 
 test('has title', async ({ page }) => {
-    await page.goto('https://sos2223-14.appspot.com/');
+    await page.goto('https://sos2223-jul-acv1.appspot.com/');
   
     // Expect a title "to contain" a substring.
-    await expect(page).toHaveTitle(/SOS2223-14/);
+    await expect(page).toHaveTitle(/SOS2223-jul-acv1/);
   });
